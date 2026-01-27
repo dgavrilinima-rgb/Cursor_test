@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>NEON TOUCH — Контакты и запись</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-contacts">
+  <div class="cyber-grid"></div>
+
+  <header class="header">
+    <div class="logo">NEON <span>TOUCH</span></div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Главная</a>
+      <a href="services.html" class="nav-link">Массажи и цены</a>
+      <a href="contacts.html" class="nav-link active">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="content content-split">
+    <section class="contact-form-card neon-border">
+      <h1>Онлайн-запись</h1>
+      <p class="subtitle">
+        Оставьте заявку — администратор свяжется с вами, чтобы подтвердить время и подобрать
+        подходящий массаж.
+      </p>
+      <form class="form">
+        <label class="field">
+          <span>Имя</span>
+          <input type="text" name="name" placeholder="Как к вам обращаться?" required />
+        </label>
+
+        <label class="field">
+          <span>Телефон</span>
+          <input type="tel" name="phone" placeholder="+7 (___) ___‑__‑__" required />
+        </label>
+
+        <label class="field">
+          <span>Предпочитаемый вид массажа</span>
+          <select name="massage">
+            <option value="">Выберите из списка</option>
+            <option>Классический расслабляющий</option>
+            <option>Глубокий массаж спины</option>
+            <option>Лимфодренажный массаж</option>
+            <option>Спортивный восстановительный массаж</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Желаемое время</span>
+          <input type="text" name="time" placeholder="Например: будни после 19:00" />
+        </label>
+
+        <label class="field">
+          <span>Комментарий</span>
+          <textarea
+            name="comment"
+            rows="3"
+            placeholder="Боли в спине, первая процедура, есть ли противопоказания и т.п."
+          ></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary form-btn">
+          Отправить заявку
+        </button>
+        <p class="form-note">
+          Нажимая на кнопку, вы соглашаетесь на обработку персональных данных.
+        </p>
+      </form>
+    </section>
+
+    <section class="contact-info-card neon-border">
+      <h2>Как нас найти</h2>
+      <p>
+        <span class="label">Адрес:</span> Город N, ул. Неоновая, дом 7, 3 этаж, правое крыло.
+      </p>
+      <p>
+        <span class="label">Телефон:</span> <a href="tel:+79001234567">+7 (900) 123‑45‑67</a>
+      </p>
+      <p>
+        <span class="label">Telegram:</span> <a href="#">@neon_touch_massage</a>
+      </p>
+
+      <h3>Режим работы</h3>
+      <ul class="schedule">
+        <li><span>Пн–Пт:</span> 10:00 – 22:00</li>
+        <li><span>Сб–Вс:</span> 11:00 – 21:00</li>
+      </ul>
+
+      <h3>Атмосфера</h3>
+      <p>
+        Тёмные стены, неоновые акценты, приглушённый свет, электронная музыка и ароматерапия —
+        пространство, где легко отключиться от суеты города.
+      </p>
+
+      <!-- Картинка с атмосферой салона -->
+      <div class="image-frame image-frame-wide neon-border">
+        <img
+          src="https://images.pexels.com/photos/3737794/pexels-photo-3737794.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Интерьер массажного салона с неоновым светом"
+        />
+        <div class="image-overlay-label">NEON ZONE</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© NEON TOUCH, 2026</span>
+    <span>Город N</span>
+  </footer>
+</body>
+</html>
+*** End Patch ***!
