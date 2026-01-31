@@ -22,7 +22,7 @@
       <h1>Онлайн-запись</h1>
       <p class="subtitle">
         Оставьте заявку — администратор свяжется с вами, чтобы подтвердить время, подобрать массаж и
-        VR‑сцену для максимального “вау‑эффекта” по ощущениям.
+        VR‑сцену под ваш запрос (антистресс, пара, интимность и т.д.). Осознанное прикосновение. Ваш запрос — наша конфиденциальность.
       </p>
       <form class="form">
         <label class="field">
@@ -42,7 +42,8 @@
             <option>Кибер‑тантрический релакс‑массаж (VR)</option>
             <option>Глубокий VR‑массаж спины</option>
             <option>Массаж «VR Flow» — лёгкость тела</option>
-            <option>Спортивный “VR Recovery”</option>
+            <option>Спортивный «VR Recovery»</option>
+            <option>Тантрический ритуал на двоих (для пар)</option>
           </select>
         </label>
 
@@ -56,7 +57,7 @@
           <textarea
             name="comment"
             rows="3"
-            placeholder="Боли в спине, первая процедура, есть ли противопоказания и т.п."
+            placeholder="Ваш запрос: антистресс, пара, интимность, боли в спине, противопоказания и т.п."
           ></textarea>
         </label>
 
@@ -78,7 +79,7 @@
         <span class="label">Телефон:</span> <a href="tel:+79001234567">+7 (900) 123‑45‑67</a>
       </p>
       <p>
-        <span class="label">Telegram:</span> <a href="#">@neon_touch_massage</a>
+        <span class="label">Telegram:</span> <a href="https://t.me/neon_touch_massage" target="_blank" rel="noopener">@neon_touch_massage</a>
       </p>
 
       <h3>Режим работы</h3>
@@ -89,8 +90,8 @@
 
       <h3>Атмосфера</h3>
       <p>
-        Неоновый “храм‑лаундж”: приглушённый свет, электронный эмбиент, ароматерапия и VR‑погружение —
-        пространство, где внимание возвращается в тело.
+        Неоновый “храм‑лаундж”: приглушённый свет, тёплые касания, ароматерапия и VR‑погружение —
+        пространство, где тело раскрепощается, а внимание возвращается в ощущения.
       </p>
 
       <!-- Картинка с атмосферой салона -->
@@ -108,5 +109,16 @@
     <span>© NEON TOUCH, 2026</span>
     <span>Город N</span>
   </footer>
+
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-widget-toggle" onclick="document.getElementById('chatWidget').classList.toggle('chat-widget-open')" aria-label="Написать нам">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    </div>
+    <div class="chat-widget-links">
+      <span class="chat-widget-label">Написать нам</span>
+      <a href="https://t.me/neon_touch_massage" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://wa.me/79001234567" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
 </body>
 </html>
