@@ -67,15 +67,37 @@
     <span>Город N, центр неонового квартала</span>
   </footer>
 
-  <div class="chat-widget" id="chatWidget" style="position:fixed;bottom:20px;right:20px;z-index:99999;display:flex">
-    <div class="chat-widget-toggle" onclick="document.getElementById('chatWidget').classList.toggle('chat-widget-open')" aria-label="Написать нам">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
-    </div>
-    <div class="chat-widget-links">
-      <span class="chat-widget-label">Написать нам</span>
-      <a href="https://t.me/neon_touch_massage" target="_blank" rel="noopener">Telegram</a>
-      <a href="https://wa.me/79001234567" target="_blank" rel="noopener">WhatsApp</a>
+  <div class="chat-widget chat-widget--collapsed" id="chatWidget">
+    <div class="chat-widget-panel">
+      <div class="chat-widget-header" id="chatWidgetHeader">
+        <div class="chat-widget-title">
+          <span>Чат NEON TOUCH</span>
+          <small>Задайте вопрос про массаж или салон</small>
+        </div>
+        <button
+          class="chat-widget-toggle"
+          type="button"
+          aria-label="Свернуть или развернуть чат"
+        >
+          <span class="chat-widget-toggle-icon">✕</span>
+        </button>
+      </div>
+      <div class="chat-widget-body">
+        <div class="chat-messages" id="chatMessages"></div>
+        <form class="chat-input-row" id="chatForm">
+          <input
+            type="text"
+            id="chatInput"
+            class="chat-input"
+            autocomplete="off"
+            placeholder="Напишите, что вас интересует..."
+          />
+          <button type="submit" class="chat-send-btn">Отправить</button>
+        </form>
+      </div>
     </div>
   </div>
+
+  <script src="chat.js"></script>
 </body>
 </html>
